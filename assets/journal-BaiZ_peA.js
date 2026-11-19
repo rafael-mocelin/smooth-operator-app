@@ -1,0 +1,1 @@
+import{i as e,n as t,o as n,r,s as i,t as a}from"./main-DR5NVPiV.js";function o(o,s,c=new Date){let l=i(c),u=e({id:`now`,name:`journal`,text:`## ${l}\n${s}`,owner:o},c).findings[0],d={id:n(),owner:o,date:l,text:s,mood:u?.mood,lesson:u?.lesson};return t.setState({journal:[d,...a().journal].sort((e,t)=>e.date<t.date?1:-1)}),r(`journal`,d.id,d),d}export{o as writeJournal};
